@@ -49,17 +49,7 @@ services:
       - DISABLE_PROFILER="1"
     restart: always
 
-  recommendationservice:
-    build: .
-    image: gcr.io/google-samples/microservices-demo/recommendationservice:v0.5.2
-    container_name: 'gcloud_app_recommend'
-    ports:
-      - "8080:8080"
-    environment:
-      - PORT=8080
-      - PRODUCT_CATALOG_SERVICE_ADDR=productcatalogservice:3550
-      - DISABLE_PROFILER="1"
-    restart: always
+#Services
 
   shippingservice:
     build: .
