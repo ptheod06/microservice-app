@@ -96,7 +96,7 @@ services:
     restart: always
 
   redis-cach:
-    build: .
+#    build: .
     image: redis:alpine
     container_name: 'gcloud_app_redis'
     ports:
